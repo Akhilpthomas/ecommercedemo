@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="du">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ----------main style------------ -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- ------------Google Fonts-------------- -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- --------------Icon pack font-awesome----------- -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>E Commerce</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg" />
+
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+    <div w3-include-html="header.html"></div>
+
+    <!-- Add you code here -->
+
+    <div w3-include-html="footer.html"></div>
+
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>

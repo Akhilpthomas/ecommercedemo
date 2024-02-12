@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="du">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ----------main style------------ -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylepopup.css" />
+    <!-- ------------Google Fonts-------------- -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- --------------Icon pack font-awesome----------- -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <title>E Commerce</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg" />
+
+    
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+    <div w3-include-html="header.html"></div>
+    <div class="login-popup">
+      <div class="box">
+        <div class="img-area">
+          <div class="img"></div>
+          
+        </div>
+        <div class="form">
+          <div class="closee" onclick="close1()">&times;</div>
+          <h1>You have visited Dishwasher and added it to cart</h1>
+        </div>
+      </div>
+    </div>
+    <!-- Main Content -->
+  <main class="container">
+    <div class="row">
+      <!-- Carousel Images -->
+      <div class="col-md-7" >
+        <!-- ADD YOUR CAROUSEL HERE -->
+        <img id="dishpdp1pic" src="images/Refrigerator11.jpg">
+
+
+        <!-- </div> -->
+      </div>
+
+      <!-- Main Product Information -->
+      <div class="col-md-5">
+
+        <h2>Refrigerator 1
+          <span class="badge badge-secondary">New</span>
+        </h2>
+        <p>Series 4<br> Free-standing Refrigerator<br> 60 cm Inox<br> Easy Clean</p>
+        <hr>
+        <h6>Price</h6>
+        <p id="normaluser">$499.99</p>
+        <p id="nonduresuser" style="color: green;"><strike style="color: red;">$799.99</strike> $499.99</p>
+        <p id="emerguser">
+          Free Delivery and Free Return
+        </p>
+        <!-- Form for adding to cart -->
+        <form id="quantityOfUnicornsForm">
+          <!-- <form> -->
+            <div class="form-row add-to-cart align-items-center">
+              
+              <div class="col-12 my-1">
+                <button type="submit" class="btn btn-primary" onclick="addtocartclickcount()">Add to Cart</button>
+              </div>
+            </div>
+          <!-- </form> -->
+
+
+
+        </form>
+
+      </div>
+    </div>
+
+    <!-- Scrollspy connected to Dropdown Menu -->
+    <div data-spy="scroll" data-target="#sections" data-offset="0">
+
+      <!-- Product Information -->
+      <div class="row">
+        <div class="col-12">
+          <h4 id="product-info" class="section-header">Product Information</h4>
+
+          <!-- ADD PRODUCT INFORMATIOB TABS HERE -->
+          <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#" role="tab" aria-controls="nav-home" aria-selected="true">Description</a>
+                
+              </div>
+            </nav>
+              <div class="=show active" id="nav-home">
+                <p>
+                    "VarioFlex-baskets and VarioDrawer: The VarioFlex basket system stands for high flexibility and convenience when handling the baskets. This is ensured by eight moveable elements in the upper basket (glass rack, foldable racks and shelves). Thanks to the red touchpoints, you can always see immediately where and how you can adjust the baskets flexibly to the dishes to be loaded. The lower basket even offers nine moveable elements (higher in the rear for glass racks, foldable racks and shelves). The foldable racks offer extra protection and stability through their rounded head ends. And thanks to the stainless steel handles everything is conveniently and quickly accessible."
+                </p>
+              </div>
+        </div>
+      </div>
+    </div>
+</div>
+</main>
+
+    <div w3-include-html="footer.html"></div>
+
+    <script>
+      includeHTML();
+    </script>
+    <script>
+      window.onload = function () {
+        loadedrefpdp1()
+      };
+    </script>
+  </body>
+</html>

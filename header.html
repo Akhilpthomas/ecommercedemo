@@ -1,0 +1,79 @@
+<html>
+  
+  <body>
+    <div class="header">
+      <div class="toppara">
+        <form>
+          <!-- <input type="text" placeholder="Pincode" id="pincode"/> -->
+          <input type="button" onclick="getpincode()" value="Enter Pincode">
+      </form>
+      </div>
+      <div class="container"></div>
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" style="height: 60px" alt="logo-image" />
+        </div>
+        <nav>
+          <ul id="menu-items">
+            <li>
+              <form class="searchbar">
+                <input type="text" placeholder="Search.." />
+                <button type="submit" onclick="searchbarclickCount()"><i class="fa fa-search"></i></button>
+              </form>
+            </li>
+            <li><button id="dropbtn1" onclick="home()">Home</li>
+            <li>
+              <div class="dropdown">
+                <button class="dropbtn" onclick="dishplp()">
+                  Dishwasher
+                  <i class="caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a onclick="dishpdp1()">Dishwasher 1</a>
+                  <a onclick="dishpdp2()">Dishwasher 2</a>
+                  <a onclick="dishpdp3()">Dishwasher 3</a>
+                  <a onclick="dishpdp4()">Dishwasher 4</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button class="dropbtn" onclick="refplp()">
+                  Refrigerator
+                  <i class="caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a onclick="refpdp1()">Refrigerator 1</a>
+                  <a href="#">Refrigerator 2</a>
+                  <a href="#">Refrigerator 3</a>
+                  <a href="#">Refrigerator 4</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button class="dropbtn" onclick="ovenplp()">
+                  Oven
+                  <i class="caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Oven 1</a>
+                  <a href="#">Oven 2</a>
+                  <a href="#">Oven 3</a>
+                  <a href="#">Oven 4</a>
+                </div>
+              </div>
+            </li>
+            <li>
+                <img src="images/cart.png" alt="cart" width="30px" height="30px" class="cart-img" onclick="mycart()">
+            </li>
+            <li>
+              <button id="clearButton" onclick="clearClickCount()">Clear</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+  <script src="header.js"></script>
+</html>

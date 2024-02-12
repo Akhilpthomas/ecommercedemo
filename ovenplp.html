@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="du">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ----------main style------------ -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- ------------Google Fonts-------------- -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- --------------Icon pack font-awesome----------- -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>E Commerce</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg" />
+
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+    <div w3-include-html="header.html"></div>
+
+    <!-- featured products -->
+    <div class="small-container mt-5">
+      <h2 class="title">Oven Products</h2>
+      <div class="row horizontal-scroll-wrapper squares">
+        <div class="col-4 box-container">
+          <img src="images/power-tab.jpeg" alt="tablet pc" />
+          <h5 class="product_name">Oven 1</h5>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p class="price_name">Rs1000.99</p>
+        </div>
+        <div class="col-4 box-container">
+          <img src="images/ps4-gaming.jpg" alt="Gaming console" />
+          <h5 class="product_name">Oven 2</h5>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p class="price_name">Rs2000</p>
+        </div>
+        <div class="col-4 box-container">
+          <img src="images/iphonex-phone.jpg" alt="Iphone X" />
+          <h5 class="product_name">Oven 3</h5>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p class="price_name">Rs4999.99</p>
+        </div>
+        <div class="col-4 box-container">
+          <img src="images/keyboard.jpg" alt="keyboard" />
+          <h5 class="product_name">Oven 4</h5>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p class="price_name">Rs199.99</p>
+        </div>
+      </div>
+    </div>
+    <!-- brands -->
+    <div class="brands">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="images/apple_logo_PNG19675.png" alt="apple logo" />
+          </div>
+          <div class="col-3">
+            <img src="images/samsung_logo_PNG2.png" alt="samsung logo" />
+          </div>
+          <div class="col-3">
+            <img src="images/mastercard_PNG7.png" alt="mastercard logo" />
+          </div>
+          <div class="col-3">
+            <img src="images/paypal_PNG19.png" alt="mastercard logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div w3-include-html="footer.html"></div>
+
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>
