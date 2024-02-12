@@ -190,6 +190,7 @@ function addtocartclickcount() {
   }
   addtocartcount++;
   localStorage.setItem("addtocartcount", addtocartcount);
+  addtocartPopup();
 }
 
 console.log(
@@ -295,4 +296,13 @@ function includeHTML() {
       return;
     }
   }
+}
+
+// popup message at bottom for adding item to cart
+function addtocartPopup() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function () {
+    x.className = x.className.replace("show", "");
+  }, 3000);
 }
