@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .filterLabel {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .container {
+      margin-top: 20px;
+      overflow: hidden;
+    }
+
+    .filterDiv {
+      display: none;
+    }
+
+    .filterDiv.show {
+      display: block;
+    }
+  </style>
+  <body>
+    <h2>Filter DIV Elements</h2>
+
+    <div id="myFilterContainer">
+      <label class="filterLabel">
+        <input
+          type="checkbox"
+          id="all"
+          name="filters"
+          checked
+          onclick="filterSelection('all')"
+        />
+        Show all
+      </label>
+      <label class="filterLabel">
+        <input
+          type="checkbox"
+          id="cars"
+          name="filters"
+          onclick="filterSelection('cars')"
+        />
+        Cars
+      </label>
+      <label class="filterLabel">
+        <input
+          type="checkbox"
+          id="animals"
+          name="filters"
+          onclick="filterSelection('animals')"
+        />
+        Animals
+      </label>
+      <label class="filterLabel">
+        <input
+          type="checkbox"
+          id="fruits"
+          name="filters"
+          onclick="filterSelection('fruits')"
+        />
+        Fruits
+      </label>
+      <label class="filterLabel">
+        <input
+          type="checkbox"
+          id="colors"
+          name="filters"
+          onclick="filterSelection('colors')"
+        />
+        Colors
+      </label>
+    </div>
+
+    <div class="container">
+      <div class="filterDiv cars">BMW</div>
+      <div class="filterDiv colors fruits">Orange</div>
+      <div class="filterDiv cars">Volvo</div>
+      <div class="filterDiv colors">Red</div>
+      <div class="filterDiv cars">Ford</div>
+      <div class="filterDiv colors">Blue</div>
+      <div class="filterDiv animals">Cat</div>
+      <div class="filterDiv animals">Dog</div>
+      <div class="filterDiv fruits">Melon</div>
+      <div class="filterDiv fruits animals">Kiwi</div>
+      <div class="filterDiv fruits">Banana</div>
+      <div class="filterDiv fruits">Lemon</div>
+      <div class="filterDiv animals">Cow</div>
+    </div>
+
+    <script>
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+
+        if (c == "all") {
+          for (i = 0; i < x.length; i++) {
+            x[i].classList.add("show");
+          }
+          return;
+        }
+
+        for (i = 0; i < x.length; i++) {
+          x[i].classList.remove("show");
+          if (x[i].classList.contains(c)) {
+            x[i].classList.add("show");
+          }
+        }
+      }
+
+      // Handle multiple checkbox selections
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", () => {
+          const selectedValues = [];
+          checkboxes.forEach((box) => {
+            if (box.checked) {
+              selectedValues.push(box.id);
+            }
+          });
+          filterSelection(selectedValues.join(","));
+        });
+      });
+    </script>
+  </body>
+</html>

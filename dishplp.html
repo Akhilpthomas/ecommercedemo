@@ -30,64 +30,193 @@
     <div w3-include-html="header.html"></div>
     <div id="planuser">Appliances Finder</div>
     <!-- featured products -->
-    <div class="small-container mt-5">
-      <h2 class="title">Dishwasher Products</h2>
-      <div class="row horizontal-scroll-wrapper squares">
-        <div class="col-4 box-container">
-          <a onclick="dishpdp1()" id="prodplp_a_tag">
-            <img src="images/dishwasher11.jpg" alt="Dishwasher" />
-            <h5 class="product_name">Dishwasher 1</h5>
-            <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <p class="price_name">$499.99</p>
-          </a>
+    <div class="container row">
+      <div class="row-flex">
+        <div class="col-sm-2 mt-5" style="background-color: #e7e7e7">
+          <h2 id="heading-filter">Filter</h2>
+          <table style="width: 100%; border: 1px; padding: 10px">
+            <tr>
+              <th>Price</th>
+            </tr>
+            <tr>
+              <td>
+                <label><input type="checkbox" /> $799 and below</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label><input type="checkbox" /> $800 - $999</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label><input type="checkbox" /> $1000 - 1199</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label><input type="checkbox" /> $1200 and above</label>
+              </td>
+            </tr>
+            <tr>
+              <th>Rating</th>
+            </tr>
+            <tr>
+              <td>
+                <label><input type="checkbox" /> 4 & Up</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label><input type="checkbox" /> 3 & Up</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label><input type="checkbox" /> 2 & Up</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label><input type="checkbox" /> 1 & Up</label>
+              </td>
+            </tr>
+            <tr>
+              <th>Colour</th>
+            </tr>
+            <tr>
+              <td>
+                <label><input type="checkbox" /> Grey</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label><input type="checkbox" /> Silver</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label><input type="checkbox" /> Black</label>
+              </td>
+            </tr>
+          </table>
         </div>
-        <div class="col-4 box-container">
-          <a onclick="dishpdp2()" id="prodplp_a_tag">
-            <img src="images/dishwasher21.jpg" alt="Dishwasher" />
-            <h5 class="product_name">Dishwasher 2</h5>
-            <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-              <i class="fa fa-star-o"></i>
+        <div class="col-sm-10 mt-5">
+          <h2 class="title">Dishwasher Products</h2>
+          <div class="row horizontal-scroll-wrapper squares">
+            <div class="col-4 box-container">
+              <a onclick="dishpdp1()" id="prodplp_a_tag">
+                <img src="images/dishwasher11.jpg" alt="Dishwasher" />
+                <h5 class="product_name">Dishwasher 1</h5>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p class="price_name">$499.99</p>
+              </a>
             </div>
-            <p class="price_name">$549.99</p>
-          </a>
-        </div>
-        <div class="col-4 box-container">
-          <a onclick="dishpdp3()" id="prodplp_a_tag">
-            <img src="images/dishwasher31.jpg" alt="Dishwasher" />
-            <h5 class="product_name">Dishwasher 3</h5>
-            <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-              <i class="fa fa-star-o"></i>
+            <div class="col-4 box-container">
+              <a onclick="dishpdp1()" id="prodplp_a_tag">
+                <img src="images/dishwasher11.jpg" alt="Dishwasher" />
+                <h5 class="product_name">Dishwasher 1</h5>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p class="price_name">$499.99</p>
+              </a>
             </div>
-            <p class="price_name">$599.99</p>
-          </a>
-        </div>
-        <div class="col-4 box-container">
-          <a onclick="dishpdp4()" id="prodplp_a_tag">
-            <img src="images/dishwasher41.jpg" alt="Dishwasher" />
-            <h5 class="product_name">Dishwasher 4</h5>
-            <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-              <i class="fa fa-star-o"></i>
+            <div class="col-4 box-container">
+              <a onclick="dishpdp1()" id="prodplp_a_tag">
+                <img src="images/dishwasher11.jpg" alt="Dishwasher" />
+                <h5 class="product_name">Dishwasher 1</h5>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p class="price_name">$499.99</p>
+              </a>
             </div>
-            <p class="price_name">$899.99</p>
-          </a>
+            <div class="col-4 box-container">
+              <a onclick="dishpdp1()" id="prodplp_a_tag">
+                <img src="images/dishwasher11.jpg" alt="Dishwasher" />
+                <h5 class="product_name">Dishwasher 1</h5>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p class="price_name">$499.99</p>
+              </a>
+            </div>
+            <div class="col-4 box-container">
+              <a onclick="dishpdp2()" id="prodplp_a_tag">
+                <img src="images/dishwasher21.jpg" alt="Dishwasher" />
+                <h5 class="product_name">Dishwasher 2</h5>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p class="price_name">$549.99</p>
+              </a>
+            </div>
+            <div class="col-4 box-container">
+              <a onclick="dishpdp2()" id="prodplp_a_tag">
+                <img src="images/dishwasher21.jpg" alt="Dishwasher" />
+                <h5 class="product_name">Dishwasher 2</h5>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p class="price_name">$549.99</p>
+              </a>
+            </div>
+            <div class="col-4 box-container">
+              <a onclick="dishpdp3()" id="prodplp_a_tag">
+                <img src="images/dishwasher31.jpg" alt="Dishwasher" />
+                <h5 class="product_name">Dishwasher 3</h5>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p class="price_name">$599.99</p>
+              </a>
+            </div>
+            <div class="col-4 box-container">
+              <a onclick="dishpdp4()" id="prodplp_a_tag">
+                <img src="images/dishwasher41.jpg" alt="Dishwasher" />
+                <h5 class="product_name">Dishwasher 4</h5>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p class="price_name">$899.99</p>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -176,6 +176,17 @@ function searchbarclickCount() {
   }
   searchbarcount++;
   localStorage.setItem("searchbarcount", searchbarcount);
+  if (document.getElementById("searchitem").value === "Dishwasher 1") {
+    dishpdp1();
+  } else if (document.getElementById("searchitem").value === "Dishwasher 2") {
+    dishpdp2();
+  } else if (document.getElementById("searchitem").value === "Dishwasher 3") {
+    dishpdp3();
+  } else if (document.getElementById("searchitem").value === "Dishwasher 4") {
+    dishpdp4();
+  } else {
+    location.href = "index.html";
+  }
 }
 
 console.log(

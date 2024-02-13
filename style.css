@@ -15,6 +15,41 @@ body {
   padding-right: 5px;
 }
 
+.slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.slide:hover .slide-overlay {
+  opacity: 1; /* Show on hover */
+}
+
+.slide-overlay button {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.row-flex {
+  display: flex;
+}
+.row-flex {
+  display: flex;
+  align-items: flex-start;
+}
+
 #dishpdp1pic {
   padding: 20px;
   width: 500px;
@@ -79,7 +114,7 @@ body {
   width: 400px;
 }
 
-form.searchbar {
+div.searchbar {
   background-color: #ddd;
   border-radius: 15px;
 }
@@ -202,17 +237,6 @@ p {
 a {
   text-decoration: none;
 }
-/* .row {
-   display: flex;
-   flex-wrap: nowrap;
-   overflow-x: auto;
-   -webkit-overflow-scrolling: touch;
-   -ms-overflow-style: -ms-autohiding-scrollbar; 
-}
-
-.box-container {
-  flex: 0 0 auto; 
-} */
 
 .col-2 {
   flex-basis: 50%;
@@ -222,13 +246,7 @@ a {
   color: #212529;
   text-decoration: none;
 }
-/* .col-2 img{
-    max-width: 100%;
-    padding: 50px 0;
-    height: 450px;
-    /* margin-left: 20%; */
-/* place-self: center;
-} */
+
 .center {
   display: block;
   margin-left: auto;
@@ -279,7 +297,7 @@ a {
 }
 
 .small-container {
-  max-width: 1080px;
+  max-width: 1280px;
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -325,6 +343,7 @@ a {
 .title {
   color: rgb(41, 36, 36);
   position: relative;
+  text-align: center;
   line-height: 60px;
 }
 
